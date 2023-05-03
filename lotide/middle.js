@@ -44,7 +44,7 @@ const middle = function(array){
   } else  if (array.length % 2 === 1){
     result = [array[Math.floor(array.length / 2)]];
   } else {
-    result =  array.slice(array.length / 2 - 1, array.length / 2 + 1)
+    result =  array.slice(Math.floor(array.length) / 2 - 1, Math.floor((array.length / 2 + 1)));
   }
   return result;
 }

@@ -7,3 +7,4 @@ const passingGrades = grades.filter(function(grade) {
 
 
 console.log("Subset of passing grades:", passingGrades);
+

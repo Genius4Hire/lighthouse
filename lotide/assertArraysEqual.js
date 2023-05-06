@@ -20,19 +20,19 @@ const eqArrays = function(arr1, arr2){
 };
 
 const assertArraysEqual = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    console.log("😒");
-    return;
-  }
+  // if (arr1.length !== arr2.length) {
+  //   console.log("😒");
+  //   return;
+  // }
 
-  let isEqual = true;
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      isEqual = false;
-    }
-  }
+  // let isEqual = true;
+  // for (let i = 0; i < arr1.length; i++) {
+  //   if (arr1[i] !== arr2[i]) {
+  //     isEqual = false;
+  //   }
+  // }
 
-  if (isEqual) {
+  if (eqArrays(arr1,arr2)) {
     console.log("🤌");
   } else {
     console.log("😒");
